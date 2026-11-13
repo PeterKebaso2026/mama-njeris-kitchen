@@ -35,7 +35,76 @@
           <strong>WhatsApp:</strong>
           <a href="https://wa.me/254712345678">Chat on WhatsApp</a>
         </p>
-      </section>
-    </main>
+    </section>
+    
+<section>
+  <h1>Book a table</h1>
+  <form action="#" method="post">
+    <label for="name">Full name</label>
+    <input type="text" id="name" name="name" autocomplete="name" required />
+
+    <label for="email">Email address</label>
+    <input type="email" id="email" name="email" autocomplete="email" required />
+
+    <label for="phone">Phone number (for M-Pesa confirmation)</label>
+    <input type="tel" id="phone" name="phone" required autocomplete="tel"
+           pattern="0[17][0-9]{8}" placeholder="0712345678" />
+
+    <label for="guests">Number of guests</label>
+    <input type="number" id="guests" name="guests" min="1" max="30" required />
+
+    <label for="date">Date</label>
+    <input type="date" id="date" name="date" min="2026-01-01" required />
+
+    <label for="time">Time</label>
+    <select id="time" name="time" required>
+      <option value="">Choose a time</option>
+      <option value="12:00">12:00</option>
+      <option value="13:00">13:00</option>
+      <option value="19:00">19:00</option>
+    </select>
+
+    <fieldset>
+      <legend>Eat in or take away?</legend>
+      <input type="radio" id="eat-in" name="service" value="eat-in" checked>
+      <label for="eat-in">Eat in</label>
+      <input type="radio" id="take-away" name="service" value="take-away">
+      <label for="take-away">Take away</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Dietary needs</legend>
+      <input type="checkbox" id="vegetarian" name="diet" value="vegetarian">
+      <label for="vegetarian">Vegetarian</label>
+      <input type="checkbox" id="no-nuts" name="diet" value="no-nuts">
+      <label for="no-nuts">No nuts</label>
+    </fieldset>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5"></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+    <input type="email" id="email" name="email" autocomplete="email" required />
+
+    <!-- New fields for Chapter 2 -->
+    <label for="phone">Phone number (for M-Pesa confirmation)</label>
+    <input type="tel" id="phone" name="phone" required autocomplete="tel"
+           pattern="0[17][0-9]{8}" placeholder="0712345678" />
+
+    <label for="guests">Number of guests</label>
+    <input type="number" id="guests" name="guests" min="1" max="30" required />
+
+    <label for="date">Date</label>
+    <input type="date" id="date" name="date" min="2026-01-01" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5"></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+<main>
   </body>
 </html>
