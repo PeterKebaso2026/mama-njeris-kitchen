@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us | Mama Njeri's Kitchen</title>
-  </head>
-  <body>
+    <meta name="description" content="Get in touch with Mama Njeri's Kitchen to book a table or make inquiries." />
+</head>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -79,31 +79,17 @@
       <input type="checkbox" id="no-nuts" name="diet" value="no-nuts">
       <label for="no-nuts">No nuts</label>
     </fieldset>
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="5"></textarea>
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5"></textarea>
+<label for="email">Email</label>
+<input type="email" id="email" name="email" autocomplete="email" required />
 
-    <button type="submit">Send</button>
-  </form>
-</section>
-    <input type="email" id="email" name="email" autocomplete="email" required />
+<label for="phone">Phone number (for M-Pesa confirmation)</label>
+<input type="tel" id="phone" name="phone" required autocomplete="tel" pattern="0[17][0-9]{8}" placeholder="0712345678" />
 
-    <!-- New fields for Chapter 2 -->
-    <label for="phone">Phone number (for M-Pesa confirmation)</label>
-    <input type="tel" id="phone" name="phone" required autocomplete="tel"
-           pattern="0[17][0-9]{8}" placeholder="0712345678" />
-
-    <label for="guests">Number of guests</label>
-    <input type="number" id="guests" name="guests" min="1" max="30" required />
-
-    <label for="date">Date</label>
-    <input type="date" id="date" name="date" min="2026-01-01" required />
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5"></textarea>
-
-    <button type="submit">Send</button>
-  </form>
+<button type="submit">Send</button>
+</form>
 </section>
 <main>
   </body>
