@@ -10,3 +10,12 @@ h2 {
   color: #7c2d12;
   margin-top: 32px;
 }
+#menu {
+  border-top: 2px solid #fdba74;
+  padding-top: 24px;
+}
+.main-nav a {
+  color: #9a3412;
+  text-decoration: none;
+  font-weight: 600;
+}
