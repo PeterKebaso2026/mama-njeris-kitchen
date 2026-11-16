@@ -69,3 +69,26 @@ h2 {
   border-radius: 6px;
   cursor: pointer;
 }
+/* style.css */
+
+/* --- Existing styles (Body, Resets, etc.) --- */
+body {
+  font-family: sans-serif;
+}
+
+/* --- Paste your new color & component rules here --- */
+.cta-button,
+a.primary-link {
+  background-color: hsl(210 85% 35%);
+  color: #ffffff;
+}
+
+.cta-button:hover,
+a.primary-link:hover {
+  background-color: hsl(210 85% 45%);
+}
+
+.featured-card {
+  background-color: hsl(210 85% 95% / 0.8);
+  border: 1px solid hsl(210 85% 85%);
+}
