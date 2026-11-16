@@ -31,3 +31,41 @@ h2 {
   border: 2px solid #c2410c;
   background-color: #ffedd5;
 }
+/* Hero call-to-action button */
+.button {
+  display: inline-block;
+  background-color: #c2410c;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Stack contact form labels and inputs cleanly */
+.contact-form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #fdba74;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  margin-top: 16px;
+  background-color: #c2410c;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
