@@ -1,5 +1,7 @@
 body {
   background-color: #fff7ed;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 1rem;
 }
 .logo {
   color: #c2410c;
@@ -76,11 +78,14 @@ body {
   font-family: sans-serif;
 }
 
-/* --- Paste your new color & component rules here --- */
 .cta-button,
 a.primary-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
   background-color: hsl(210 85% 35%);
   color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
 .cta-button:hover,
@@ -91,4 +96,26 @@ a.primary-link:hover {
 .featured-card {
   background-color: hsl(210 85% 95% / 0.8);
   border: 1px solid hsl(210 85% 85%);
+}
+.hero {
+  min-height: 50vh; /* Adapts to at least half the screen height */
+}
+
+p {
+  max-width: 65ch; /* Keeps line length comfortable for reading */
+}
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.875rem;
+}
+
+.site-footer {
+  text-align: center;
 }
