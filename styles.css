@@ -1,3 +1,18 @@
+/* --- Professional Reset & Box-Sizing --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%; /* Images never overflow their container */
+  display: block; /* Removes default inline bottom spacing on images */
+}
 :root {
   --color-primary: #c2410c;
   --color-primary-dark: #7c2d12;
@@ -28,6 +43,27 @@ body {
   font-size: var(--text-base);
   line-height: 1.6;
   color: var(--color-text);
+}
+.main-nav a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background-color: var(--color-primary-dark);
 }
 .logo {
   color: var(--color-primary);
@@ -137,4 +173,12 @@ li {
   white-space: nowrap;
   color: var(--color-primary-dark);
   font-weight: bold;
+}
+.featured-card {
+  width: 300px;
+  padding: 2rem;
+  margin: 2rem auto; /* 2rem top/bottom, auto left/right centers the card */
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
 }
