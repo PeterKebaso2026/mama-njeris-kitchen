@@ -2,6 +2,7 @@ body {
   background-color: #fff7ed;
   font-family: "Inter", Arial, sans-serif;
   font-size: 1rem;
+  line-height: 1.6;
 }
 .logo {
   color: #c2410c;
@@ -10,7 +11,8 @@ body {
 }
 h2 {
   color: #7c2d12;
-  margin-top: 32px;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
 }
 #menu {
   border-top: 2px solid #fdba74;
@@ -101,13 +103,10 @@ a.primary-link:hover {
   min-height: 50vh; /* Adapts to at least half the screen height */
 }
 
-p {
-  max-width: 65ch; /* Keeps line length comfortable for reading */
-}
-h1,
-h2,
-h3 {
-  font-family: "Playfair Display", Georgia, serif;
+p,
+li {
+  max-width: 65ch;
+  margin-bottom: 1rem;
 }
 
 .eyebrow {
@@ -118,4 +117,17 @@ h3 {
 
 .site-footer {
   text-align: center;
+}
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  line-height: 1.2;
+}
+h1 {
+  letter-spacing: -0.02em;
+}
+
+.price {
+  white-space: nowrap;
 }
