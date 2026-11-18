@@ -1,3 +1,14 @@
+:root {
+  --z-badge: 1;
+  --z-header: 10;
+  --z-floating: 20; /* fixed buttons like WhatsApp */
+  --z-modal: 100;
+  --color-primary: #c2410c;
+  --color-primary-dark: #7c2d12;
+  --color-primary-light: #ffedd5;
+  --color-text: #1f2937;
+}
+/* Rest of your styles follow below... */
 /* --- Professional Reset & Box-Sizing --- */
 *,
 *::before,
@@ -252,13 +263,14 @@ html {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: var(--z-header);
   background-color: var(--color-surface, #ffffff);
 }
 
 .whatsapp-button {
   position: fixed;
   right: 1rem;
+  z-index: var(--z-floating);
   bottom: 1rem;
   padding: 0.75rem 1.25rem;
   background-color: #15803d;
@@ -267,4 +279,18 @@ html {
   text-decoration: none;
   font-weight: 700;
   box-shadow: 0 4px 12px rgb(0 0 0 / 0.2);
+}
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(0 0 0 / 0.5);
+  z-index: var(--z-modal);
+}
+
+.dialog {
+  max-width: 24rem;
+  margin: 20vh auto 0;
+  padding: var(--space-5);
+  background-color: var(--color-surface);
+  border-radius: 12px;
 }
