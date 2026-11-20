@@ -294,3 +294,74 @@ html {
   background-color: var(--color-surface);
   border-radius: 12px;
 }
+/* === Chapter 1: Link & User Action States === */
+nav a:link {
+  color: var(--color-primary, #1b4332);
+}
+
+nav a:visited {
+  color: hsl(280 50% 40%);
+}
+
+nav a:hover,
+.button:hover,
+.whatsapp-button:hover {
+  background-color: var(--color-primary-dark, #143326);
+  color: #ffffff;
+}
+
+nav a:active,
+.button:active,
+.whatsapp-button:active {
+  transform: translateY(1px);
+}
+
+a:focus-visible,
+.button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--color-primary, #1b4332);
+  outline-offset: 2px;
+}
+
+/* === Chapter 1: Form States === */
+input:focus,
+textarea:focus {
+  border-color: var(--color-primary, #1b4332);
+  outline: 2px solid var(--color-primary-light, #d8f3dc);
+}
+
+input:disabled,
+textarea:disabled {
+  background-color: #f3f4f6;
+  cursor: not-allowed;
+}
+
+input:user-invalid,
+textarea:user-invalid {
+  border-color: #b91c1c;
+  outline: 2px solid #fecaca;
+}
+
+/* === Chapter 1: Structural & Pseudo-Elements === */
+h2::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 4px;
+  margin-top: 0.5rem;
+  background-color: var(--color-primary, #1b4332);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-muted, #6b7280);
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.card:not(.featured) {
+  opacity: 0.92;
+}
