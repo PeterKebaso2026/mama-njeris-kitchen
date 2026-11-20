@@ -365,3 +365,37 @@ li:last-child {
 .card:not(.featured) {
   opacity: 0.92;
 }
+/* === Chapter 2: Transitions === */
+nav a {
+  transition:
+    background-color 200ms ease,
+    color 200ms ease;
+}
+
+.button,
+.whatsapp-button {
+  transition:
+    background-color 200ms ease,
+    color 200ms ease,
+    transform 150ms ease;
+}
+
+.card {
+  transition:
+    transform 200ms ease-out,
+    box-shadow 200ms ease-out;
+}
+input,
+textarea {
+  transition: border-color 200ms ease;
+}
+/* === Accessibility: Respect Reduced Motion === */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
