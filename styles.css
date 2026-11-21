@@ -101,12 +101,21 @@ h2 {
   border-radius: 8px;
   padding: var(--space-3);
   margin-bottom: var(--space-3);
+  transition:
+    transform 200ms ease-out,
+    box-shadow 200ms ease-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.12);
 }
 
 .card.featured {
   border: 2px solid var(--color-primary);
   background-color: var(--color-primary-light);
 }
+
 /* Hero call-to-action button */
 .button {
   display: inline-block;
@@ -116,13 +125,17 @@ h2 {
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
+  transition:
+    background-color 200ms ease,
+    transform 100ms ease;
 }
 
-/* Stack contact form labels and inputs cleanly */
-.contact-form label {
-  display: block;
-  margin-top: var(--space-3);
-  font-weight: bold;
+.button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.button:active {
+  transform: scale(0.97);
 }
 
 .contact-form input,
